@@ -44,5 +44,12 @@ spec:
     - name: APP_CONFIG_JSON
       value: >
         {
-          "topics": []
+          "topics": [
+            {
+              "name": "teamsykefravr.aktivitetskrav-vurdering",
+              "location": "AIVEN",
+              "keyDeserializerType": "STRING",
+              "valueDeserializerType": "STRING"
+            }
+          ]
         }

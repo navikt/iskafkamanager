@@ -8,7 +8,6 @@ metadata:
 spec:
   image: europe-north1-docker.pkg.dev/nais-management-233d/poao/kafka-manager:2023.12.13-06.32-bd9f953
   port: 8080
-  webproxy: true
   ingresses:
     - https://iskafkamanager.intern.dev.nav.no
   prometheus:

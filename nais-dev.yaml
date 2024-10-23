@@ -42,9 +42,9 @@ spec:
     - name: APP_CONFIG_JSON
       value: >
         {
-          "topics": [
+          "topics": [ 
             {
-              "name": "sen-oppfolging-varsel",
+              "name": "team-esyfo.varselbus",
               "location": "AIVEN",
               "keyDeserializerType": "STRING",
               "valueDeserializerType": "STRING"

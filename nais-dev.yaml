@@ -1,15 +1,15 @@
 kind: Application
 apiVersion: nais.io/v1alpha1
 metadata:
-  name: iskafkamanager
-  namespace: teamsykefravr
+  name: esyfo-kafka-manager
+  namespace: team-esyfo
   labels:
-    team: teamsykefravr
+    team: team-esyfo
 spec:
   image: europe-north1-docker.pkg.dev/nais-management-233d/poao/kafka-manager:2024.10.09-13.33-a9faed8
   port: 8080
   ingresses:
-    - https://iskafkamanager.intern.dev.nav.no
+    - https://esyfo-kafka-manager.intern.dev.nav.no
   prometheus:
     enabled: true
     path: /internal/prometheus
@@ -35,7 +35,7 @@ spec:
       tenant: nav.no
       claims:
         groups:
-          - id: 05b6c0d2-b6db-4440-96b4-4de66c09b3c6 # teamsykefravr
+          - id: 1fac48f0-9744-4d44-a5b5-e2c8aa2ca42b # team-esyfo
   kafka:
     pool: nav-dev
   env:
@@ -44,13 +44,7 @@ spec:
         {
           "topics": [
             {
-              "name": "teamsykefravr.aktivitetskrav-vurdering",
-              "location": "AIVEN",
-              "keyDeserializerType": "STRING",
-              "valueDeserializerType": "STRING"
-            },
-            {
-              "name": "teamsykefravr.personoppgavehendelse",
+              "name": "sen-oppfolging-varsel",
               "location": "AIVEN",
               "keyDeserializerType": "STRING",
               "valueDeserializerType": "STRING"

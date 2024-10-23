@@ -1,9 +1,9 @@
-name: Deploy iskafkamanager
+name: Deploy esyfo-kafka-manager
 
 on:
   push:
     branches:
-      - master
+      - main
 
 permissions:
   id-token: write
@@ -18,12 +18,3 @@ jobs:
         env:
           CLUSTER: dev-gcp
           RESOURCE: nais-dev.yaml
-  deploy-prod:
-    name: Deploy to prod
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
-      - uses: nais/deploy/actions/deploy@v2
-        env:
-          CLUSTER: prod-gcp
-          RESOURCE: nais-prod.yaml

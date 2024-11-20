@@ -6,7 +6,7 @@ metadata:
   labels:
     team: teamsykefravr
 spec:
-  image: europe-north1-docker.pkg.dev/nais-management-233d/poao/kafka-manager:2024.10.09-13.33-a9faed8
+  image: europe-north1-docker.pkg.dev/nais-management-233d/poao/kafka-manager:2024.10.25-13.23-52ea038
   port: 8080
   ingresses:
     - https://iskafkamanager.intern.dev.nav.no

@@ -6,8 +6,7 @@ metadata:
   labels:
     team: team-esyfo
 spec:
-  image: europe-north1-docker.pkg.dev/nais-management-233d/poao/kafka-manager:2024.07.30-12.58-f815b32
-  port: 8080
+  image: europe-north1-docker.pkg.dev/nais-management-233d/poao/kafka-manager:2025.06.17-12.54-36e7798
   ingresses:
     - https://esyfo-kafka-manager.intern.dev.nav.no
   prometheus:
